@@ -318,7 +318,7 @@ public class IntegerSetTest {
 		IntegerSet setA = new IntegerSet(list_uno);
 		IntegerSet setB = new IntegerSet(list_dos);
 
-
+ 
 		//setA = {2, 5, 6}
 		setA.add(2);
 		setA.add(5);
