@@ -14,5 +14,5 @@ public class IntegerSetException extends Exception{
 	
 	public IntegerSetException(String note) {
 		super(note);
-	}
+	} 
 }
