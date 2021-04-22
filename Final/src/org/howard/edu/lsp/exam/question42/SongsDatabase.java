@@ -24,22 +24,31 @@ public class SongsDatabase {
 
 
 	/* Return the Set that contains all songs for a genre */
-	public Set<String> getSongs(String genre) {
+	public void getSongs(String genre) {
 			// Code it!!
+    Set<String> answer;
 		for (Map.Entry<String, Set<String>> songs : map.entrySet()) {
 			
 			if (songs.getKey() == genre) {
 //				Set<String> answer = songs.getValue();
-				return songs.getValue();
+				answer =  songs.getValue();
+        System.out.println(answer);
 			}
 			
 		}
-//		return null;
+		// return answer;
 	}
 
 	/* Return genre, i.e., jazz, given a song title */
 	public String getGenreOfSong(String songTitle) {
 			// Code it!!
-	}
+    for (Map.Entry<String, Set<String>> entry : map.entrySet()) {
+        if (entry.getValue().equals(songTitle)) {
+          System.out.println(entry.getKey());
+          return entry.getKey();
+        }
+    }
+    return null;
+  }
 }
 
