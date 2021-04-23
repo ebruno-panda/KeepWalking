@@ -20,8 +20,8 @@ public class SongsDataBaseTests {
 		SongsDatabase db = new SongsDatabase();
 		db.addSong("Pop", "Play It Again"); //adding song
 		db.addSong("Pop", "Shooting Star"); //adding song		
-		db.addSong("Rap", "DNA");
-		db.addSong("Rap", "Savage");
+		db.addSong("Rap", "DNA"); //adding song
+		db.addSong("Rap", "Savage"); //adding song
 		
 	}
 	
